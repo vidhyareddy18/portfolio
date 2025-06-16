@@ -1,2 +1,2 @@
 # portfolio
-my full stack developer portfolio
+vidhya reddy - python full stack web developer
