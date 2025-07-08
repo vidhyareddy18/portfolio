@@ -1,15 +1,118 @@
- <section class="projects" id="projects">
-  <h2>Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vidhya Reddy | Full Stack Developer</title>
 
-  <div class="project">
-    <h3>Task Manager Web App</h3>
-    <p>A full stack web application built using Python, Flask, HTML, CSS, and MySQL. Users can create, update, and delete tasks with a user-friendly interface.</p>
-    <a href="https://github.com/vidhyareddy18/task-manager" target="_blank">View on GitHub</a>
-  </div>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <div class="project">
-    <h3>E-Commerce Website</h3>
-    <p>A frontend e-commerce site made with HTML, CSS, JavaScript, and Bootstrap. Designed with a modern look showcasing products and shopping features.</p>
-    <a href="https://github.com/vidhyareddy18/ecommerce-site" target="_blank">View on GitHub</a>
-  </div>
-</section>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top" style="background-color: var(--nav-bg);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Vidhya</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" class="btn btn-outline-primary ms-3">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-5" id="about">
+    <h1 class="display-4 fw-bold">Hi, I'm Vidhya 👩‍💻</h1>
+    <p class="lead">A passionate Full Stack Developer from India</p>
+    <p>📧 reddyvidhya3006@gmail.com | 📱 9705315118</p>
+    <p class="fw-semibold">Full Stack Developer | Frontend Developer | Web Developer</p>
+    <a href="resume.pdf" class="btn btn-primary mt-3" download>📄 Download Resume</a>
+  </section>
+
+  <!-- Career Objective -->
+  <section class="container py-5">
+    <h2 class="section-title">Career Objective</h2>
+    <p>
+      A passionate and detail-oriented Full Stack Developer with strong foundational skills in HTML, CSS, JavaScript, Python, MySQL, and Flask. Eager to contribute to team success through hard work, creative development, and a commitment to delivering high-quality web applications.
+    </p>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="container py-5" id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <ul>
+      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap</li>
+      <li><strong>Backend:</strong> Python (Flask)</li>
+      <li><strong>Database:</strong> MySQL, SQLite</li>
+      <li><strong>Tools:</strong> VS Code, Git, GitHub, MySQL Workbench, IDLE, WordPress (learning), Elementor (learning)</li>
+      <li><strong>Other:</strong> Responsive Web Design, CRUD Operations, REST API basics</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="container py-5" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card mb-4">
+      <h4>Job Application Tracker</h4>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Python (Flask), SQLite</p>
+      <p>Built a personal dashboard to manage job applications with login/register, form inputs, and CRUD functionality.</p>
+    </div>
+
+    <div class="project-card mb-4">
+      <h4>E-Commerce Website</h4>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, Flask, SQLite</p>
+      <p>Developed a shopping website with login/signup, product catalog, add-to-cart, and order flow.</p>
+    </div>
+
+    <div class="project-card mb-4">
+      <h4>Task Manager Web App</h4>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Flask, SQLite</p>
+      <p>To-do list app with user authentication and task management (add, edit, delete, complete).</p>
+    </div>
+
+    <div class="project-card mb-4">
+      <h4>Google Homepage Clone</h4>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <p>Recreated Google’s homepage for frontend practice with responsive layout and clean design.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container py-5" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p><strong>Email:</strong> reddyvidhya3006@gmail.com</p>
+    <p><strong>Mobile:</strong> 9705315118</p>
+    <p><strong>Location:</strong> India</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vidhya-reddy-2116a7339" target="_blank">View Profile</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2025 Vidhya Reddy | Made with ❤️</p>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        toggleBtn.innerText = '☀️ Light Mode';
+      } else {
+        toggleBtn.innerText = '🌙 Dark Mode';
+      }
+    });
+  </script>
+</body>
+</html>
